@@ -12,6 +12,6 @@ import java.util.concurrent.atomic.AtomicLong;
 public class KasutajaService {
     private final AtomicLong counter = new AtomicLong();
     public List<Kasutaja> getKasutaja(){
-        return List.of(new Kasutaja(counter.incrementAndGet(), "Artur", 21, LocalDate.of(2001, Month.APRIL, 20), "artur@kreegipuu.net"));
+        return List.of(new Kasutaja(counter.incrementAndGet(), "Artur", LocalDate.of(2001, Month.APRIL, 20), "artur@kreegipuu.net"));
     }
 }
