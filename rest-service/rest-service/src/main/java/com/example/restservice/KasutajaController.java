@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 public class KasutajaController {
     @GetMapping("/kasutaja")
-    public List<Kasutaja> tere(){
+    public List<Kasutaja> getKasutaja(){
         return List.of(new Kasutaja("Artur", 21, LocalDate.of(2001, Month.APRIL, 20), "artur@kreegipuu.net"));
     }
 
