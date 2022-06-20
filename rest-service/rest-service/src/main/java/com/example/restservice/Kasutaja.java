@@ -1,6 +1,7 @@
 package com.example.restservice;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Kasutaja {
     private Long id;
@@ -12,17 +13,15 @@ public class Kasutaja {
     public Kasutaja() {
     }
 
-    public Kasutaja(Long id, String name, Integer age, LocalDate sünniaeg, String email) {
+    public Kasutaja(Long id, String name, LocalDate sünniaeg, String email) {
         this.id = id;
         this.name = name;
-        this.age = age;
         this.sünniaeg = sünniaeg;
         this.email = email;
     }
 
-    public Kasutaja(String name, Integer age, LocalDate sünniaeg, String email) {
+    public Kasutaja(String name, LocalDate sünniaeg, String email) {
         this.name = name;
-        this.age = age;
         this.sünniaeg = sünniaeg;
         this.email = email;
     }
@@ -44,7 +43,7 @@ public class Kasutaja {
     }
 
     public Integer getAge() {
-        return age;
+        return Period.between(sünniaeg, LocalDate.now()).getYears();
     }
 
     public void setAge(Integer age) {
@@ -72,7 +71,7 @@ public class Kasutaja {
         return "Kasutaja{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", age=" + age +
+                ", age=" + getAge() +
                 ", sünniaeg=" + sünniaeg +
                 ", email='" + email + '\'' +
                 '}';
