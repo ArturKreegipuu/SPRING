@@ -7,13 +7,14 @@ import java.time.Period;
 
 @NoArgsConstructor
 @ToString
+@Setter
 public class User {
 
-    private @Getter @Setter Long id;
-    private @Getter @Setter String name;
-    private @Setter Integer age;
-    private @Getter @Setter LocalDate birthDate;
-    private @Getter @Setter String email;
+    private @Getter Long id;
+    private @Getter String name;
+    private Integer age;
+    private @Getter LocalDate birthDate;
+    private @Getter String email;
 
 
     public User(Long id, String name, LocalDate birthDate, String email) {
