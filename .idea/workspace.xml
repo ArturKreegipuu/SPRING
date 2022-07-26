@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f14274db-2f27-4541-ae84-611b94763168" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-service/rest-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/rest-service/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
   </component>
   <component name="RunManager">
     <configuration name="RestServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="rest-service.main" />
+      <module name="SPRING" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.restservice.*" />
@@ -67,6 +68,7 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.restservice.RestServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,6 +88,10 @@
       <option name="presentableId" value="Default" />
       <updated>1655714685012</updated>
       <workItem from="1655714687406" duration="7095000" />
+      <workItem from="1658386015821" duration="597000" />
+      <workItem from="1658393469309" duration="92000" />
+      <workItem from="1658830279424" duration="157000" />
+      <workItem from="1658830477365" duration="86000" />
     </task>
     <servers />
   </component>
