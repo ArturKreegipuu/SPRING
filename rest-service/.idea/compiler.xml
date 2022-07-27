@@ -6,6 +6,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="rest-service.rest-service.main~1" target="11" />
+      <module name="rest-service.rest-service.test" target="11" />
       <module name="rest-service.rest-service.test~1" target="11" />
     </bytecodeTargetLevel>
   </component>
