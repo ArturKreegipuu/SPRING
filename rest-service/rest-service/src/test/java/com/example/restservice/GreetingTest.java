@@ -5,11 +5,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GreetingTest {
+    Greeting greeting = new Greeting(1, "content");
 
     @Test
-    void getGreetingGetters() {
-        Greeting greeting = new Greeting(1, "content");
-        System.out.println("Greeting id: " + greeting.getId() + " greeting content: " + greeting.getContent());
-        // "Greeting id: 1 greeting content: content"
+    void getGreetingId() {
+        assertEquals(1, greeting.getId());
+    }
+    @Test
+    void getGreetingContent() {
+        assertEquals("content", greeting.getContent());
     }
 }
