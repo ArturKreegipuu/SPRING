@@ -10,11 +10,15 @@ import java.time.Period;
 @Setter
 public class User {
 
-    private @Getter Long id;
-    private @Getter String name;
+    private @Getter
+    Long id;
+    private @Getter
+    String name;
     private Integer age;
-    private @Getter LocalDate birthDate;
-    private @Getter String email;
+    private @Getter
+    LocalDate birthDate;
+    private @Getter
+    String email;
 
 
     public User(Long id, String name, LocalDate birthDate, String email) {
@@ -29,6 +33,7 @@ public class User {
         this.birthDate = birthDate;
         this.email = email;
     }
+
     public Integer getAge() {
         return Period.between(birthDate, LocalDate.now()).getYears();
     }

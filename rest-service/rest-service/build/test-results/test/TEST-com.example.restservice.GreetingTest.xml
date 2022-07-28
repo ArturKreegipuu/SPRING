@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.restservice.GreetingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-28T13:26:22" hostname="KREEK" time="0.023">
+  <properties/>
+  <testcase name="getGreetingGetters()" classname="com.example.restservice.GreetingTest" time="0.023"/>
+  <system-out><![CDATA[Greeting id: 1 greeting content: content
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
