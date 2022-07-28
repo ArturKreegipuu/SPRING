@@ -7,17 +7,16 @@ import java.time.Period;
 
 @NoArgsConstructor
 @ToString
-@Setter
 public class User {
 
-    private @Getter
+    private @Getter @Setter
     Long id;
-    private @Getter
+    private @Getter @Setter
     String name;
-    private Integer age;
+    private @Setter Integer age;
     private @Getter
     LocalDate birthDate;
-    private @Getter
+    private @Getter @Setter
     String email;
 
 
@@ -36,5 +35,10 @@ public class User {
 
     public Integer getAge() {
         return Period.between(birthDate, LocalDate.now()).getYears();
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+        this.setAge(this.getAge());
     }
 }
