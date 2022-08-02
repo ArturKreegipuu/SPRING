@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserServiceTest {
     UserService userService = new UserService();
     @Test
-    void getUserListTest() {
+    void getUserList() {
         List<User> users = userService.getUser();
         User user = new User(1L, "Artur", LocalDate.of(2001, Month.APRIL, 20), "artur@kreegipuu.net");
         assertEquals(List.of(user).toString(), users.toString());
