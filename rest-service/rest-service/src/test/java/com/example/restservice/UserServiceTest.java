@@ -4,14 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.Month;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserServiceTest {
-    private final AtomicLong counter = new AtomicLong();
     UserService userService = new UserService();
     @Test
     void getUserListTest() {
