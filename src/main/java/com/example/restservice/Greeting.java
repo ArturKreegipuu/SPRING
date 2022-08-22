@@ -1,11 +1,9 @@
 package com.example.restservice;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.ToString;
-import lombok.Value;
+import lombok.*;
 
 @Value
+@Builder
 public class Greeting {
 
     long id;

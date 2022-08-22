@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GreetingTest {
-    Greeting greeting = new Greeting(1, "content");
+    Greeting greeting = Greeting.builder().id(1).content("content").build();
 
     @Test
     void getGreetingId() {

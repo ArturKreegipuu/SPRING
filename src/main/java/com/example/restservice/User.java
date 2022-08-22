@@ -6,19 +6,14 @@ import java.time.LocalDate;
 import java.time.Period;
 
 @NoArgsConstructor
-@ToString
+@Data
 public class User {
 
-    private @Getter @Setter
-    Long id;
-    private @Getter @Setter
-    String name;
-    private @Setter Integer age;
-    private @Getter
-    LocalDate birthDate;
-    private @Getter @Setter
-    String email;
-
+    private Long id;
+    private String name;
+    private Integer age;
+    private LocalDate birthDate;
+    private String email;
 
     public User(Long id, String name, LocalDate birthDate, String email) {
         this.id = id;
