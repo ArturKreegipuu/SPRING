@@ -14,14 +14,14 @@ public class User {
     private Integer age;
     private LocalDate birthDate;
     private String email;
-
+    @Builder
     public User(Long id, String name, LocalDate birthDate, String email) {
         this.id = id;
         this.name = name;
         this.birthDate = birthDate;
         this.email = email;
     }
-
+    @Builder
     public User(String name, LocalDate birthDate, String email) {
         this.name = name;
         this.birthDate = birthDate;

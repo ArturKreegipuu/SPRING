@@ -3,17 +3,20 @@ package com.example.restservice;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
+import java.time.Month;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserTest {
     User user = new User();
-    User user2 = new User(1L, "Name", LocalDate.of(2001, 04, 20), "name@name.name");
-    User user3 = new User("Name", LocalDate.of(2001, 04, 20), "name@name.name");
+    User user2 = User.builder().id(1L).name("Name").birthDate(LocalDate.of(2001, 04, 20)).email("name@name.name").build();
+    User user3 = User.builder().name("Name").birthDate(LocalDate.of(2001, 04, 20)).email("name@name.name").build();
     @Test
     void getAge() {
+        User user4 = User.builder().birthDate(LocalDate.of(2001, 04, 20)).build();
         assertEquals(21, user2.getAge());
         assertEquals(21, user3.getAge());
+        assertEquals(21, user4.getAge());
     }
     @Test
     void getId() {
