@@ -8,7 +8,7 @@ import java.time.Month;
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserTest {
-    User user = new User();
+   User user = new User();
     User user2 = User.builder().id(1L).name("Name").birthDate(LocalDate.of(2001, 04, 20)).email("name@name.name").build();
     User user3 = User.builder().name("Name").birthDate(LocalDate.of(2001, 04, 20)).email("name@name.name").build();
     @Test
