@@ -2,27 +2,32 @@ package com.example.restservice;
 
 import lombok.*;
 
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.time.LocalDate;
 import java.time.Period;
-
+@Entity
 @NoArgsConstructor
 @Data
-public class User {
-
+public class Users {
+    @Id
+    @GeneratedValue
     private Long id;
     private String name;
     private Integer age;
     private LocalDate birthDate;
     private String email;
     @Builder
-    public User(Long id, String name, LocalDate birthDate, String email) {
+    public Users(Long id, String name, LocalDate birthDate, String email) {
         this.id = id;
         this.name = name;
         this.birthDate = birthDate;
         this.email = email;
     }
     @Builder
-    public User(String name, LocalDate birthDate, String email) {
+    public Users(String name, LocalDate birthDate, String email) {
         this.name = name;
         this.birthDate = birthDate;
         this.email = email;
