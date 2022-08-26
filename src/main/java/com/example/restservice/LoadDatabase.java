@@ -12,7 +12,7 @@ import java.time.Month;
 @Configuration
 public class LoadDatabase {
     private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
-
+    /*
     @Bean
     CommandLineRunner initDatabase(UserRepository userRepository){
 
@@ -22,6 +22,6 @@ public class LoadDatabase {
             userRepository.findAll().forEach(users -> log.info("Preloaded " + users));
 
         };
-    }
+    }*/
 
 }

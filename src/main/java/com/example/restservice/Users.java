@@ -1,8 +1,10 @@
 package com.example.restservice;
 
 import lombok.*;
+import org.hibernate.annotations.DynamicInsert;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -11,6 +13,7 @@ import java.time.Period;
 @Entity
 @NoArgsConstructor
 @Data
+@DynamicInsert
 public class Users {
     @Id
     @GeneratedValue
@@ -25,12 +28,14 @@ public class Users {
         this.name = name;
         this.birthDate = birthDate;
         this.email = email;
+        this.age = this.getAge();
     }
     @Builder
     public Users(String name, LocalDate birthDate, String email) {
         this.name = name;
         this.birthDate = birthDate;
         this.email = email;
+        this.age = this.getAge();
     }
 
     public Integer getAge() {
